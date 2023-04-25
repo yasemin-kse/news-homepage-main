@@ -1,0 +1,51 @@
+.main{
+    gap: 30px;
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"img img" "head main-content";
+}
+.main .img{
+    grid-area: img;
+}
+.main .img img{
+    width: 100%;
+}
+
+.head {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1;
+}
+.main .head{
+    grid-area: head;
+}
+
+.main .main-content{
+    display: flex;
+    flex-direction: column;
+    grid-area: main-content;
+    gap: 30px;
+}
+.main .main-content .btn{
+    width: 200px;
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    background-color: var(--very-dark-blue);
+}
+.new div{
+    padding-bottom:20px;
+    border-bottom:1px solid var(--dark-grayish-blue) ;
+}
+.new div:last-child{
+    border-bottom:none;
+}
+
+
+
+

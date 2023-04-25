@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --soft-orange :hsl(35, 77%, 62%);
+    --soft-red:hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+p{
+    font-size: 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    gap: 30px;
+}
+
+
+.container .new {
+    padding: 20px;
+
+}
+
+.container .new h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--soft-orange);
+    margin: 10px 0;
+}
+
+.container .new h3 {
+    color: var(--off-white);
+    line-height: 2.5;
+}
+
+.container .new p {
+    margin-bottom: 15px;
+    color: var(--grayish-blue);
+}
+
+.container .btn {
+    background-color: var(--soft-red);
+    color: #fff;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .btn:hover {
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+.cards {
+    padding: 13;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+.container .cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards div img {
+    width: 125px;
+}
+
+.cards div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cards span {
+    color: var(--dark-grayish-blue);
+    font-weight: bold;
+    opacity: 50%;
+    font-size: 30px;
+    
+}
+
+.cards h4 {
+    font-size: 20px;
+    color: var(--very-dark-blue);
+    margin: 10px 0;
+} 
+
+.cards p {
+    color: var(--dark-grayish-blue);
+}
+
+
+
+.c1s{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
